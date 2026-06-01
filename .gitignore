@@ -1,0 +1,115 @@
+# ==========================================
+# 1. THE C++ EXECUTABLE & GLOBAL FILTER
+# ==========================================
+# Ignore absolutely everything by default to block extensionless C++ binaries
+*
+
+# Allow directories so Git can actually scan your project structure
+!*/
+
+# Explicitly whitelist only your source and project files
+!*.cpp
+!*.h
+!*.hpp
+!*.cc
+!*.cxx
+!*.py
+!*.gitignore
+
+# ==========================================
+# 2. DOCUMENTATION & MULTIMEDIA
+# ==========================================
+# Block PDFs completely, even if found in subfolders
+!*.pdf
+
+# ==========================================
+# 3. C++ / BUILD ARTIFACTS
+# ==========================================
+*.d
+*.slo
+*.lo
+*.o
+*.obj
+*.gch
+*.pch
+*.so
+*.dylib
+*.dll
+*.lai
+*.la
+*.a
+*.lib
+*.exe
+*.out
+*.app
+
+# ==========================================
+# 4. PYTHON CACHES & ENVIRONMENT VARIABLES
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+bin/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+*.manifest
+*.spec
+htmlcov/
+.toml
+.cache
+.pytest_cache/
+.coverage
+.coverage.*
+nosetests.xml
+coverage.xml
+.benchmarks/
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ==========================================
+# 5. IDE CONFIGURATIONS (VS Code, PyCharm, Xcode)
+# ==========================================
+# Allow the main IDE configuration folders to be scanned first
+!.vscode/
+!.idea/
+
+# Ignore specific internal workspace states and user data
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
+*.code-workspace
+
+.idea/*
+
+xcuserdata/
+*.moved-aside
+*.xcuserstate
+*.xcworkspace/contents.xcworkspacedata
+*.xcworkspace/xcshareddata/xcbaselines/
+
+# ==========================================
+# 6. OS SYSTEM FILES
+# ==========================================
+.DS_Store
+Thumbs.db
